@@ -26,7 +26,7 @@ const HomePage = () => {
             } catch (error) {
                 console.error("Error fetching products:", error);
             } finally {
-                setLoading(false); // Stop loading
+                setLoading(false);
             }
         };
         fetchProducts();
@@ -74,10 +74,8 @@ const HomePage = () => {
 
     return (
         <div className="home-page">
-            {/* Navbar */}
             <Navbar />
 
-            {/* Hero Section */}
             <div className="hero-section">
                 <img
                     src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/a50a13168411771.644ea2a6b2810.jpg"
@@ -89,7 +87,6 @@ const HomePage = () => {
             {/* Search and Filter Section */}
             <div className="search-filter">
                 <div className="search-bar-container">
-                    {/* <FaSearch className="search-icon" /> */}
                     <input
                         type="text"
                         placeholder="Search for products (e.g., laptop, shoes)"
@@ -113,7 +110,6 @@ const HomePage = () => {
                 </select>
             </div>
 
-            {/* Spinner or Product Grid */}
             {loading ? (
                 <div className="spinner-container">
                     <div className="spinner"></div>
