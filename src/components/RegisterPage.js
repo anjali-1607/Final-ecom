@@ -54,7 +54,7 @@ const RegisterPage = () => {
             "users",
             JSON.stringify([...storedUsers, newUser])
         );
-        alert("Registration successful! You can now log in.");
+        alert("Registration successful!.");
         navigate("/"); // Redirect to login page
     };
 
